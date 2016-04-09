@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.project.befit"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="17" />
+    <uses-permission android:maxSdkVersion="19" android:name="android.permission.INTERNET"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+         <activity
+            android:name=".StartPage"
+            android:label="start page" >
+            <intent-filter>
+                <action android:name="com.project.StartPage" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+         <activity
+            android:name=".MainPage"
+            android:label="main activity" >
+            <intent-filter>
+                <action android:name="com.project.MainPage" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".AboutActivity"
+            android:label="about activity" 
+            android:theme="@android:style/Theme.Dialog">
+            <intent-filter>
+                <action android:name="com.project.AboutActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+          <activity
+            android:name=".Exercise"
+            android:label="adds exercises" >
+            <intent-filter>
+                <action android:name="com.project.Exercise" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Calc"
+            android:label="Calculating" >
+            <intent-filter>
+                <action android:name="com.project.Calc" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Running"
+            android:label="cal for running" >
+            <intent-filter>
+                <action android:name="com.project.Running" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Swimming"
+            android:label="cal for swimming" >
+            <intent-filter>
+                <action android:name="com.project.Swimming" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".TotalCalories"
+            android:label="sum calories" >
+            <intent-filter>
+                <action android:name="com.project.TotalCalories" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Trekking"
+            android:label="cal for trekking" >
+            <intent-filter>
+                <action android:name="com.project.Trekking" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Yoga"
+            android:label="cal for Yoga" >
+            <intent-filter>
+                <action android:name="com.project.Yoga" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Cycling"
+            android:label="cal forCycling" >
+            <intent-filter>
+                <action android:name="com.project.Cycling" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Pushup"
+            android:label="cal for Pushup" >
+            <intent-filter>
+                <action android:name="com.project.Pushup" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Pullup"
+            android:label="cal for Pullup" >
+            <intent-filter>
+                <action android:name="com.project.Pullup" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Zumba"
+            android:label="cal for Zumba" >
+            <intent-filter>
+                <action android:name="com.project.Zumba" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Aerobics"
+            android:label="cal for Aerobics" >
+            <intent-filter>
+                <action android:name="com.project.Aerobics" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Jogging"
+            android:label="cal for Jogging" >
+            <intent-filter>
+                <action android:name="com.project.Jogging" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+         <activity
+            android:name=".ListViewTab"
+            android:label="list view" >
+            <intent-filter>
+                <action android:name="com.project.ListViewTab" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".DBTable"
+            android:label="db table" >
+            <intent-filter>
+                <action android:name="com.project.DBTable" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".TimerActivity"
+            android:label="timer" 
+            android:theme="@android:style/Theme.Dialog">
+            <intent-filter>
+                <action android:name="com.project.TimerActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+         <activity
+            android:name=".CustomExercise"
+            android:label="adds custom Exercise" >
+            <intent-filter>
+                <action android:name="com.project.CustomExercise" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+                 <activity
+            android:name=".Guide"
+            android:label="Guides" >
+            <intent-filter>
+                <action android:name="com.project.Guide" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+         <activity
+            android:name=".SelectMenu"
+            android:label="BeFit Menu" >
+            <intent-filter>
+                <action android:name="com.project.SelectMenu" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ResultSelect"
+            android:label="select result" >
+            <intent-filter>
+                <action android:name="com.project.ResultSelect" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Remainder"
+            android:label="Set reminder" >
+            <intent-filter>
+                <action android:name="com.project.Remainder" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Register"
+            android:label="Details" >
+            <intent-filter>
+                <action android:name="com.project.Register" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Breakfast"
+            android:label="breakfast" >
+            <intent-filter>
+                <action android:name="com.project.Breakfast" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Lunch"
+            android:label="lunch" >
+            <intent-filter>
+                <action android:name="com.project.Lunch" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Dinner"
+            android:label="dinner" >
+            <intent-filter>
+                <action android:name="com.project.Dinner" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Graph"
+            android:label="graph" >
+            <intent-filter>
+                <action android:name="com.project.Graph" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+         <receiver android:name=".NotificationPublisher" />
+    </application>
+
+</manifest>

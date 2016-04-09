@@ -1,0 +1,90 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dip" 
+    android:background="@drawable/regbg">"
+
+    <Button
+        android:id="@+id/button1"
+        android:background="@drawable/save"
+        android:layout_width="64dip"
+        android:layout_height="64dip"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="52dp"
+        android:onClick="commit" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/name"
+        android:layout_alignLeft="@+id/name"
+        android:layout_marginBottom="42dp"
+        android:paddingBottom="5dip"
+        android:textColor="#ffffff"
+        android:text="Enter Name:" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="21dp"
+        android:src="@drawable/regprof" />
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="26dp"
+        android:ems="10"
+        android:background="#80D1CDCD"
+        android:inputType="textPersonName"
+        android:paddingBottom="15dip" />
+
+    <EditText
+        android:id="@+id/weight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView3"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:background="#80D1CDCD"
+        android:inputType="number"
+        android:paddingBottom="15dip" />
+
+    <EditText
+        android:id="@+id/height"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView4"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:paddingBottom="15dip"
+        android:background="#80D1CDCD"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/weight"
+        android:layout_below="@+id/textView1"
+        android:textColor="#ffffff"
+        android:text="Enter Weight in Kg:" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/height"
+        android:layout_below="@+id/weight"
+        android:textColor="#ffffff"
+        android:text="Enter Height in cm:" />
+
+</RelativeLayout>

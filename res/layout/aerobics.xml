@@ -1,0 +1,81 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/aerobicsbg"
+    android:padding="20dp" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="19dp"
+        android:text="AEROBICS"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView1"
+        android:layout_marginLeft="23dp"
+        android:layout_marginTop="31dp"
+        android:text="Enter time in minutes:"
+        android:layout_marginBottom="5dp" />
+
+    <EditText
+        android:id="@+id/aerobicstime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_below="@+id/textView2"
+        android:ems="10" 
+        android:inputType="number">
+
+        
+    </EditText>
+
+    <TextView
+        android:id="@+id/aerobicsresult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="result appears here" 
+        android:textStyle="bold"
+        android:textSize="30sp"/>
+
+    <Button
+        android:id="@+id/aerobicsres"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/aerobicsresult"
+        android:layout_marginTop="73dp"
+        android:onClick="aerobicsCalc"
+        android:text="Result" />
+
+    <Button
+        android:id="@+id/aerobicsressave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/aerobicsres"
+        android:layout_alignBottom="@+id/aerobicsres"
+        android:layout_alignParentRight="true"
+        android:onClick="aerobicsressave"
+        android:text="Update" />
+
+    <ImageButton
+        android:id="@+id/imageButton1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/timer" 
+        android:background="#80ffffff"
+        android:onClick="timer"/>
+   
+</RelativeLayout>

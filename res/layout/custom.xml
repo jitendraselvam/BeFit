@@ -1,0 +1,100 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:background="@drawable/custombg">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="Here you can add your own custom exercise"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+    
+        <TextView
+        android:id="@+id/custextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView1"
+        android:layout_marginLeft="23dp"
+        android:layout_marginTop="31dp"
+        android:text="Enter time in minutes:"
+        android:layout_marginBottom="5dp" />
+
+    <EditText
+        android:id="@+id/custime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/custextView"
+        android:layout_below="@+id/custextView"
+        android:ems="10"
+        android:inputType="number"
+        android:layout_marginBottom="5dp" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/TextView01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/custime"
+        android:layout_below="@+id/custime"
+        android:text="Enter Calories burnt in minutes:"
+         android:layout_marginBottom="5dp" />
+
+    <EditText
+        android:id="@+id/cuscalText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/TextView01"
+        android:layout_below="@+id/TextView01"
+        android:ems="10"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/cusrestext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cuscalText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="78dp"
+        android:text="Result appears here"
+        android:textStyle="bold"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/cusres"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/cusrestext"
+        android:layout_marginTop="25dp"
+        android:onClick="cusRes"
+        android:text="Result" />
+
+    <Button
+        android:id="@+id/cusupdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/cusres"
+        android:layout_alignBottom="@+id/cusres"
+        android:layout_alignParentRight="true"
+        android:onClick="cusUpdate"
+        android:text="Update" />
+
+    <ImageButton
+        android:id="@+id/imageButton1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/timer" 
+        android:background="#80ffffff"
+        android:onClick="timer"/>
+   
+</RelativeLayout>

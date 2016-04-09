@@ -1,0 +1,39 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wording" >
+    
+      <TextView
+        android:id="@+id/totalweight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="127dp"
+        android:text="TOTAL WEIGHT LOST"
+        android:textColor="#ffffff" 
+        android:textSize="20sp"/>
+
+    <Button
+        android:id="@+id/calcal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="#80ffffff"
+        android:text="View weight lost"
+        android:onClick="onclick" />
+
+    <TextView
+        android:id="@+id/totalcalories"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/totalweight"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="46dp"
+        android:text="TOTAL CALORIES"
+        android:textColor="#ffffff"
+        android:textSize="20sp" />
+  
+</RelativeLayout>

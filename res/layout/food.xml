@@ -1,0 +1,80 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/foodbg"
+    android:orientation="vertical"
+    android:padding="10dip">
+    
+   <ScrollView 
+       	android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#CCFFFFFF" 
+        android:orientation="vertical"
+        android:padding="5dip">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" 
+            android:layout_marginBottom="5dip">
+            <ImageButton
+                android:layout_width="match_parent"
+                android:id="@+id/breakfast"
+            	android:layout_height="120dip"
+             	android:src="@drawable/breakfast"/>
+            <TextView
+                android:text="Breakfast"
+                android:gravity="center"
+                android:layout_width="match_parent"
+            	android:layout_height="match_parent"
+            	android:textSize="24sp" >
+            </TextView>
+            
+        </FrameLayout>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" 
+            android:layout_marginBottom="5dip">
+            <ImageButton
+                android:layout_width="match_parent"
+            	android:layout_height="120dip"
+            	android:id="@+id/lunch"
+             	android:src="@drawable/lunch"/>
+            <TextView
+                android:text="Lunch"
+                android:gravity="center"
+                android:layout_width="match_parent"
+            	android:layout_height="match_parent"
+            	android:textSize="24sp" >
+            </TextView>
+            
+        </FrameLayout>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" 
+            android:layout_marginBottom="5dip">
+            <ImageButton
+                android:layout_width="match_parent"
+            	android:layout_height="120dip"
+            	android:id="@+id/dinner"
+             	android:src="@drawable/dinner1"/>
+            <TextView
+                android:text="Dinner"
+                android:gravity="center"
+                android:layout_width="match_parent"
+            	android:layout_height="match_parent"
+            	android:textSize="24sp" >
+            </TextView>
+            
+        </FrameLayout>
+
+    </LinearLayout>
+    </ScrollView>
+    
+    
+  
+   
+</LinearLayout>

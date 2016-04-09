@@ -1,0 +1,35 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp"
+    android:background="@drawable/resultselectbg">
+
+    <Button
+        android:id="@+id/burnbut"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="#00000000"
+        android:layout_margin="5dp"
+        android:drawableTop="@drawable/calbut" />
+
+    <Button
+        android:id="@+id/reviewbut"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/burnbut"
+        android:layout_below="@+id/burnbut"
+        android:background="#00000000"
+        android:drawableTop="@drawable/review" />
+
+    <Button
+        android:id="@+id/graph"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/reviewbut"
+        android:layout_centerHorizontal="true"
+        android:text="Graph" />
+   
+</RelativeLayout>

@@ -1,0 +1,157 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="5dp">
+    
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Guide"
+        android:layout_gravity="top"
+        android:gravity="center"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+     <TextView 
+         android:layout_marginTop="20dp"
+      android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+          android:gravity="left"
+          android:text="Here are some tips for working out:"/>
+     
+     <ImageView 
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:src="@drawable/tip1"/>
+     <TextView
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="1. Avoid higher-fat meals for up to four hours before workouts\r\n\r\n
+
+2. Eat a green salad with your last whole-food meal before the gym\r\n\r\n
+
+3. Take 200-400 mg of caffeine 1-2 hours before your workout\r\n\r\n
+
+4. Don't train to failure on every set\r\n\r\n
+
+5. Use forced reps on your last sets\r\n\r\n
+
+6. Vary your rep speed\r\n\r\n
+
+7. Save cardio for after your weight workout\r\n\r\n
+
+8. Stretch only after training\r\n\r\n
+
+9. Don't drop dietary cholesterol too low\r\n\r\n
+
+10. Relax in a sauna or hot tub every day\r\n\r\n"
+         ></TextView>
+     
+     <TextView 
+         android:layout_marginTop="20dp"
+         android:textStyle="bold"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="Here are some advice videos given by EXPERTS:"
+         />
+     
+     <TextView 
+         android:layout_marginTop="20dp"
+         android:textStyle="italic"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="For beginners"
+         android:layout_marginBottom="5dp"
+         />
+     <LinearLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+     
+     <Button
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content" 
+         android:drawableTop="@drawable/playvid"
+         android:text="video 1"
+          android:layout_weight="1"
+          android:layout_gravity="left"
+          android:id="@+id/video1"
+          android:onClick="videolink1"
+         android:background="#00000000"/>
+         <Button
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content" 
+         android:drawableTop="@drawable/playvid"
+         android:text="video 2"
+          android:layout_weight="1"
+           android:id="@+id/video2"
+          android:onClick="videolink2"
+          android:layout_gravity="right"
+         android:background="#00000000"/>
+</LinearLayout>   
+<TextView 
+         android:layout_marginTop="20dp"
+         android:textStyle="italic"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="For Advance users"
+         android:layout_marginBottom="5dp"
+         />
+     <LinearLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+     
+     <Button
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content" 
+         android:drawableTop="@drawable/playvid"
+         android:text="video 1"
+          android:layout_weight="1"
+          android:layout_gravity="left"
+          android:onClick="videolink3"
+           android:id="@+id/video3"
+         android:background="#00000000"/>
+         <Button
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content" 
+         android:drawableTop="@drawable/playvid"
+         android:text="video 2"
+          android:layout_weight="1"
+           android:id="@+id/video4"
+          android:onClick="videolink4"
+          android:layout_gravity="right"
+         android:background="#00000000"/>
+</LinearLayout>   
+
+
+          <ImageView 
+              android:layout_margin="10dp"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:src="@drawable/quote"/>
+          
+               <TextView
+                   android:layout_marginTop="20dp"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content" 
+         android:text="GOOD LUCK!"
+         android:textStyle="bold"
+         android:gravity="center"
+         android:textSize="40sp"/>
+
+               <Button
+                   android:id="@+id/button1"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Remainder"
+                    />
+     
+</LinearLayout>
+</ScrollView>

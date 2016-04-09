@@ -1,0 +1,140 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/foodbg"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="225dip"
+        android:background="@drawable/dinnermenu" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:padding="10dip" >
+
+       <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#CCFFFFFF"
+            android:orientation="vertical"
+            android:padding="5dip" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dip"
+                android:orientation="horizontal" >
+"
+
+                <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/sukka" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dip"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="186dp"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:gravity="center"
+                        android:text="Sukha Rotis"
+                        android:textSize="30sp" />
+
+                    <TextView
+                        android:id="@+id/editText2"
+                        android:layout_width="186dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dip"
+                        android:ems="10"
+                        android:gravity="center"
+                        android:text="will set based on values"
+                        android:textSize="15sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dip"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/milk" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dip"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="186dp"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:gravity="center"
+                        android:text="Milk"
+                        android:textSize="30sp" />
+
+                    <TextView
+                        android:layout_width="186dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dip"
+                        android:ems="10"
+                        android:gravity="center"
+                        android:text="will set based on values"
+                        android:textSize="15sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dip"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/channa" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dip"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="186dp"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:gravity="center"
+                        android:text="Channa"
+                        android:textSize="30sp" />
+
+                    <TextView
+                        android:layout_width="186dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dip"
+                        android:ems="10"
+                        android:gravity="center"
+                        android:text="will set based on values"
+                        android:textSize="15sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,82 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pushupbg"
+    android:padding="20dp" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="19dp"
+        android:text="PUSHUP"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView1"
+        android:layout_marginLeft="23dp"
+        android:layout_marginTop="31dp"
+        android:text="Enter time in minutes:"
+        android:layout_marginBottom="5dp" />
+
+    <EditText
+        android:id="@+id/pushuptime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_below="@+id/textView2"
+        android:ems="10" 
+        android:inputType="number">
+
+        
+    </EditText>
+
+    <TextView
+        android:id="@+id/pushupresult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="result appears here"
+        android:textStyle="bold"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/pushupres"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/pushupresult"
+        android:layout_marginTop="73dp"
+        android:onClick="pushupCalc"
+        android:text="Result" />
+
+    <Button
+        android:id="@+id/pushupressave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/pushupres"
+        android:layout_alignBottom="@+id/pushupres"
+        android:layout_alignParentRight="true"
+        android:onClick="pushupressave"
+        android:text="Update" />
+
+    <ImageButton
+        android:id="@+id/imageButton1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="18dp"
+        android:src="@drawable/timer"
+        android:background="#80ffffff"
+        android:onClick="timer" />
+   
+</RelativeLayout>

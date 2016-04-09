@@ -1,0 +1,207 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+     android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context="${relativePackage}.${activityClass}"
+    android:background="@drawable/mainiconbg">
+
+<LinearLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}"
+    android:orientation="vertical"
+    android:padding="10dp"
+     >
+    
+    <LinearLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:layout_margin="5dp" >
+    
+   
+
+ <Button 
+      android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:background="#00000000"
+        android:layout_weight="1"
+        android:id="@+id/running"
+        android:drawableTop="@drawable/running"
+        android:text="Running"
+        android:onClick="running"
+        android:textColor="#ffffff"
+     />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:background="#00000000"
+        android:layout_weight="1"
+        android:id="@+id/swimming"
+          android:drawableTop="@drawable/swimming"
+        android:text="Swimming"
+        android:textColor="#ffffff"
+        android:onClick="swimming"/>
+    
+</LinearLayout>
+
+    <LinearLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:layout_margin="5dp" >
+
+    <Button
+     
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:background="#00000000"
+        android:layout_weight="2"
+        android:id="@+id/trekking"
+        android:drawableTop="@drawable/trekking"
+        android:text="Trekking"
+        android:textColor="#ffffff"
+        android:onClick="trekking"/>
+
+    <Button
+        
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:background="#00000000"
+        android:layout_weight="2"
+        android:id="@+id/yoga"
+        android:drawableTop="@drawable/yoga"
+        android:text="Yoga"
+        android:textColor="#ffffff"
+        android:onClick="yoga"/>
+    
+</LinearLayout>
+
+    <LinearLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:layout_margin="5dp" >
+
+    <Button
+       
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_weight="3"
+        android:id="@+id/zumba"
+        android:background="#00000000"
+       android:drawableTop="@drawable/zumba"
+        android:text="Zumba"
+        android:textColor="#ffffff"
+        android:onClick="zumba" />
+
+    <Button
+       
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_weight="3"
+        android:id="@+id/pullup"
+        android:background="#00000000"
+        android:drawableTop="@drawable/pullup"
+        android:text="Pullups"
+        android:textColor="#ffffff"
+        android:onClick="pullup" />
+    
+</LinearLayout>
+    <LinearLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:layout_margin="5dp" >
+
+    <Button
+       
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_weight="4"
+        android:background="#00000000"
+       android:drawableTop="@drawable/pushup"
+        android:text="Pushups"
+        android:id="@+id/pushup"
+        android:textColor="#ffffff"
+        android:onClick="pushup"/>
+
+    <Button
+        
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_weight="4"
+        android:background="#00000000"
+        android:id="@+id/jogging"
+        android:drawableTop="@drawable/jogging"
+        android:text="Jogging"
+        android:textColor="#ffffff"
+        android:onClick="jogging"/>
+    
+</LinearLayout>
+    <LinearLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:layout_margin="5dp" >
+
+    <Button
+     
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_weight="5"
+        android:background="#00000000"
+        android:drawableTop="@drawable/cycling"
+        android:text="Cycling"
+        android:textColor="#ffffff"
+        android:id="@+id/cycling"
+        android:onClick="cycling" />
+
+    <Button
+        
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_weight="5"
+        android:background="#00000000"
+        android:drawableTop="@drawable/aerobics"
+        android:text="Aerobics"
+        android:id="@+id/aerobics"
+        android:textColor="#ffffff"
+        android:onClick="aerobics"/>
+    
+</LinearLayout>
+
+       <LinearLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:layout_margin="5dp" >
+
+    <Button
+
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_weight="5"
+        android:background="#00000000"
+        android:id="@+id/custom"
+        android:onClick="Custom"
+        android:text="Custom"
+        android:textColor="#ffffff"
+        android:drawableTop="@drawable/custom" />
+    
+
+    </LinearLayout>
+</LinearLayout>
+</ScrollView>
